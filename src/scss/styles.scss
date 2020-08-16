@@ -1,11 +1,50 @@
 @import "./_reset";
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
 @import "./variables";
+@import "./elements";
 * {
   box-sizing: border-box;
 }
 body {
-  height: 100vh;
+}
+
+.wrapper {
+  position: relative;
+  .logo {
+    position: absolute;
+    left: $wrapper-padding;
+    top: $wrapper-padding;
+  }
+  .wrapper__container {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 60px);
+  }
+}
+
+.first {
+  background-color: white;
+  padding-top: 250px;
+  .first__header {
+    h1 {
+      @extend #side-padding;
+      font-family: "Playfair Display", serif;
+      font-size: 75px;
+      line-height: 85px;
+    }
+    img {
+      margin-top: 140px;
+      width: 100%;
+    }
+  }
+}
+.second {
+  background-color: #5ea3ec;
+}
+.third {
+  background-color: #f64444;
+}
+.fourth {
+  background-color: #ffb400;
 }
 
 /*
