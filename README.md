@@ -4,7 +4,7 @@
 
 Practice to nomadcoder clone project
 
-- demo : 
+- demo : https://jhseo-git.github.io/scss-canalstreet/
 - target : [https://canalstreet.market/](https://canalstreet.market/)
 
 ## To Clone:
